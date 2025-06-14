@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #003366;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #003366;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 15%;
+}
+
+/* Logo */
+.logo-container a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.logo-container img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo-container span {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Menu */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('home.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-texto {
+    background-color: rgba(0, 0, 51, 0.6);
+    color: white;
+    padding: 2em 3em;
+    border-radius: 12px;
+    max-width: 700px;
+}
+
+.hero-texto h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.hero-texto p {
+    font-size: 1.4em;
+}
+
+/* Conteúdo principal */
+main {
+    padding: 3em 15%;
+    background-color: #f0f8ff;
+}
+
+h2 {
+    color: #003366;
+    margin-bottom: 0.5em;
+}
+
+/* Linha do Tempo (história.html) */
+.timeline {
+    background-color: #f0f8ff;
+    padding: 3em 15%;
+}
+
+.timeline h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 2em;
+    color: #003366;
+}
+
+.timeline-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3em;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.timeline-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.timeline-text {
+    padding: 1.5em;
+}
+
+.timeline-text h3 {
+    color: #003366;
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+}
+
+.timeline-text p {
+    color: #333;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+    .timeline-item {
+        flex-direction: row;
+    }
+
+    .timeline-item img {
+        width: 40%;
+    }
+
+    .timeline-text {
+        width: 60%;
+    }
+}
+
+/* Linha do Tempo de Homenagens (homenagens.html) */
+.homenagens {
+    background-color: #f0f8ff;
+    padding: 3em 15%;
+}
+
+.homenagens h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 2em;
+    color: #003366;
+}
+
+.homenagem-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3em;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 2em;
+    text-align: center;
+}
+
+.homenagem-item img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1em;
+    border: 4px solid #003366;
+}
+
+.homenagem-texto h3 {
+    font-size: 1.5em;
+    color: #003366;
+    margin-bottom: 0.5em;
+}
+
+.homenagem-texto p {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .homenagem-item {
+        flex-direction: row;
+        text-align: left;
+        gap: 2em;
+    }
+
+    .homenagem-item img {
+        margin-bottom: 0;
+    }
+
+    .homenagem-texto {
+        flex: 1;
+    }
+}
+
+/* Rodapé */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    font-size: 0.95em;
+}
